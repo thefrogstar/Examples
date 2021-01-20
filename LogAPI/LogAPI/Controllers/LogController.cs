@@ -10,6 +10,7 @@ namespace LogAPI.Controllers
         [HttpPost]
         public IActionResult Post(LogMessage message)
         {
+            //Added this comment just to provoke a commit
             DAL backend = new DAL();
             backend.LogMessage(message);
             return new OkResult();
